@@ -1,21 +1,21 @@
 body {
   background: #3E4D64;
 }
-.vector_profile {
-  margin-top: -100px;
-  overflow: hidden;
-  display: inline-block;
-  float: right;
 
-}
-.aboutSection{  
-  float: left;
+.aboutSection{    
   text-align: center;
   background: #3E4D64;
 
 }
+.vector_profile {
+  float: right;
+  margin-top: -100px;
+
+}
 .aboutBio {
-  margin-right: 400px;
+  float: left;
+  padding-left: 100px;
+  margin-right: 300px;
   margin-top: 100px;
   margin-bottom:-500px;
   font-family: 'Open Sans', sans-serif;
@@ -32,6 +32,7 @@ body {
   font-size: 20px;
 }
 .infoSection{ 
+  clear: both;
   background: #EDD4B2;  
   padding-bottom: 40px;
 }
