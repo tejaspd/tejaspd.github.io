@@ -32,12 +32,11 @@ body {
   font-size: 20px;
 }
 .infoSection{ 
-  float: static;
   background: #EDD4B2;  
   padding-bottom: 40px;
 }
 
-.infoSection .headInfo h1{
+.infoSection h1{
   font-family: 'Open Sans', sans-serif;
   color: #6B5954;
   text-align: center;
@@ -74,7 +73,13 @@ body {
 }
 
 .experienceSection {
+  text-align: center;
   background: #455561;
+  
+}
+.experienceSection h1{
+  color: #FFF;
+  font-family: 'Roboto';
 }
 
 
