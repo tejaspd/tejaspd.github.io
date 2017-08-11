@@ -9,6 +9,7 @@
   <meta name="Tejas" content="TejasPDWebsite">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="shortcut icon" href="favicon.ico" type="images/favicon.ico">
   <!-- UIkit CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/css/uikit.min.css" />
 
@@ -22,6 +23,7 @@
   <!-- Imported fonts -->
   <style>
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Questrial');
 </style>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -66,7 +68,7 @@
   <div class='headInfo'>
     <h1>about me</h1>
   </div>
-  <div id="code">
+  <div uk-scrollspy="cls:uk-animation-fade; repeat: true" id="code">
             <div id="console">
               &gt; tejas.hometown<br/>
               <span class="answer">&nbsp;&nbsp;=&gt; "Fremont, CA"<br/><br/></span>
@@ -103,7 +105,26 @@
 <div class="experienceSection">
   <h1>experience</h1>
 
-
+  <div class="uk-card uk-card-default uk-width-1-2@m">
+    <div class="uk-card-header">
+        <div class="uk-grid-small uk-flex-middle" uk-grid>
+            <div class="uk-width-auto">
+                <img class="uk-border-square" width="200" height="100" src="images/sighten_logo_text_empowering.png">
+            </div>
+            <div class="uk-width-expand">
+                <h3 class="uk-card-title uk-margin-remove-bottom">Sighten</h3>
+                <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">June, 2017 - August 2017</time></p>
+            </div>
+        </div>
+    </div>
+    <div class="uk-card-body uk-dark">
+      <div class="uk-card-badge uk-label"> Internship</div>
+        <p> Software Engineering Intern</p>
+    </div>
+    <div class="uk-card-footer">
+        <a href="#" class="uk-button uk-button-text">Read more</a>
+    </div>
+</div>
 
 </div>
 

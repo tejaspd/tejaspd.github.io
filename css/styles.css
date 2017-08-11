@@ -23,22 +23,22 @@ body {
 }
 
 .aboutBio h1{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Questrial', sans-serif;
   color: #FFF;
   font-size: 80px;
 }
 #miniAbout{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Questrial', sans-serif;
   font-size: 20px;
 }
 .infoSection{ 
   clear: both;
-  background: #EDD4B2;  
+  background: #fff;  
   padding-bottom: 40px;
 }
 
 .infoSection h1{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Questrial', sans-serif;
   color: #6B5954;
   text-align: center;
   margin-top: 100px;
@@ -76,14 +76,19 @@ body {
 }
 
 .experienceSection {
+
+
+  padding-top: 50px;
   text-align: center;
   background: #455561;
   
 }
 .experienceSection h1{
+  padding-bottom: 50px;
   color: #FFF;
-  font-family: 'Roboto';
+  font-family: 'Questrial';
 }
+.experienceSection 
 
 
 
