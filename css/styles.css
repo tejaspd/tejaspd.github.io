@@ -76,23 +76,34 @@ body {
 }
 
 .experienceSection {
-  color: #fff;
+  color: #ccc;
 
 
   padding-top: 50px;
   text-align: center;
   background: #455561;
+  padding-bottom: 50px;
   
 }
-.experienceSection h1{
-  padding-bottom: 50px;
+.experienceSection h1 {
+  padding-bottom: 30px;
   color: #FFF;
   font-family: 'Questrial';
 }
-.switch {
+.uk-switcher {
+  font-size: 30px;
+  text-align: left;
+}
+.title h2{
+  padding-top: 20px;
+  color: #FFF;
+  font-family: 'Questrial';
+
+}
+.subtitle h2{
+  padding-top: 20px;
   color: #ccc;
 }
-
 
 
 
