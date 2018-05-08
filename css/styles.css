@@ -120,3 +120,7 @@ body {
   color: #7C7C7C;
   font-family: 'Questrial';
 }
+.subtitle h5{
+  padding-top: 20px;
+  color: #ccc;
+}
