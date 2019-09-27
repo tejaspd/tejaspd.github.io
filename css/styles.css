@@ -1,10 +1,14 @@
 body {
-  background: #3E4D64;
+  background: #010212;
+}
+.uk-navbar {
+    background-color: #010212 !important;
 }
 
 .aboutSection{
+  height: 250px;
   text-align: center;
-  background: #3E4D64;
+  background: #0000;
 
 }
 .vector_profile {
@@ -13,13 +17,12 @@ body {
 
 }
 .aboutBio {
-  float: left;
-  padding-left: 100px;
-  margin-right: 300px;
+  float: center;
+
   margin-top: 100px;
   margin-bottom:-500px;
   font-family: 'Open Sans', sans-serif;
-  color: #CDD3D5;
+  color: gray;
 }
 
 .aboutBio h1{
@@ -33,13 +36,13 @@ body {
 }
 .infoSection{
   clear: both;
-  background: #fff;
+  background: #010212;
   padding-bottom: 40px;
 }
 
 .infoSection h1{
   font-family: 'Questrial', sans-serif;
-  color: #6B5954;
+  color: white;
   text-align: center;
   margin-top: 100px;
   padding-top: 40px;
@@ -81,17 +84,17 @@ body {
 
   padding-top: 50px;
   text-align: center;
-  background: #455561;
+  background: #010212;
   padding-bottom: 50px;
 
 }
 .projectSection {
-  color: #ccc;
+  color: white;
 
 
   padding-top: 50px;
   text-align: center;
-  background: #E7D7C1;
+  background: #010212;
   padding-bottom: 50px;
 
 }
@@ -103,6 +106,7 @@ body {
 .uk-switcher {
   font-size: 30px;
   text-align: left;
+
 }
 .title h2{
   padding-top: 20px;

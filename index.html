@@ -19,7 +19,14 @@
   <!-- UIkit JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/js/uikit.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/js/uikit-icons.min.js"></script>
-
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script>
+  <script src="jquery.localscroll.js" type="text/javascript"></script>
+  <script src="jquery.scrollTo.js" type="text/javascript"></script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+     $('#navscroll').localScroll({duration:800});
+  });
+  </script>
   <!-- Imported fonts -->
   <style>
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
@@ -36,13 +43,14 @@
 <body>
   <script src="js/scripts.js"></script>
   <div id='navbar'>
-    <nav class="uk-navbar-container" uk-navbar>
+    <nav class="uk-navbar-container uk-navbar" >
       <div class="uk-navbar-left">
-          <ul class="uk-navbar-nav">
+          <ul class="uk-navbar-nav" id="navscroll">
               <li><a target="_blank" href="http://www.tejaspd.io">Home</a></li>
               <li><a href="http://www.linkedin.com/in/tejaspd" target="_blank">linkedin</a></li>
               <li><a href="http://www.github.com/tejaspd" target="_blank">github </a></li>
               <li><a href="mailto:tejaspd@berkeley.edu" target="_blank">email</a></li>
+              <li><a href="#workexperience">experience</a></li>
           </ul>
 
       </div>
@@ -54,14 +62,14 @@
   <div class="aboutBio animated fadeInUp">
     <h1>tejas priyadarshan</h1>
     <div id="miniAbout">
-      <p>&gt; software and web developer
-      <br> &gt; computer science student
-      <br>&gt; educator &nbsp &nbsp</p>
+      <p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&gt; intersection of data & culture
+      <br> &gt; data science student &nbsp &nbsp
+      <br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&gt; education, music, basketball </p>
       </div>
   </div>
-  <div class="vector_profile">
+  <!-- <div class="vector_profile">
     <img src="images/vector profile table website.png">
-  </div>
+  </div> -->
 </div>
 
 <div class="infoSection">
@@ -71,21 +79,21 @@
   <div uk-scrollspy="cls:uk-animation-fade; repeat: true" id="code">
             <div id="console">
               &gt; tejas.hometown<br/>
-              <span class="answer">&nbsp;&nbsp;=&gt; "Fremont, CA"<br/><br/></span>
+              <span class="answer">&nbsp;&nbsp;=&gt; "Union City, CA"<br/><br/></span>
               &gt; tejas.education<br/>
               <span class="answer">&nbsp;&nbsp;=&gt; "University of California, Berkeley"<br/><br/></span>
               &gt; tejas.major<br/>
-              <span class="answer">&nbsp;&nbsp;=&gt; [Computer Science, Statistics]<br/><br/></span>
+              <span class="answer">&nbsp;&nbsp;=&gt; [Data Science]<br/><br/></span>
               &gt; tejas.expectedGraduation<br/>
               <span class="answer">&nbsp;&nbsp;=&gt; "May 2020"<br/><br/></span>
               &gt; tejas.interests<br/>
               <span class="answer">&nbsp;&nbsp;=&gt; ["machine learning", "basketball", "hip-hop", "lakers", "education"]<br/><br/></span>
               &gt; tejas.workExperience.latest<br/>
               <span class="answer">&nbsp;&nbsp;=&gt; Latest Work Experience {<br/>
-                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; company: "Spotify"<br/>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; company: "Twitch"<br/>
                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; role: "Data Engineering Intern"<br/>
-                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; startDate: "June 2018"<br/>
-                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; endDate: "August 2018"
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; startDate: "June 2019"<br/>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; endDate: "August 2019"
                <br/>
                 &nbsp &nbsp }
                <br/>
@@ -94,15 +102,16 @@
               <span class="answer">&nbsp;&nbsp;=&gt; "<a target="_blank" href="pdf/resume.pdf">tejas_priyadarshan.pdf</a>"<br/><br/></span>
               &gt; tejas.thoughts<br/>
               <span class="answer">&nbsp;&nbsp;=&gt; ["<a target="_blank" href="http://www.twitter.com/tejas_pd">twitter</a>",
-                 "<a target="_blank" href="https://medium.com/@TejasP4">medium.com</a>",
-                 "<a target="_blank" href="http://www.rdio.com/people/knakano/playlists/7112262/My_Brain/">rdio</a>"]<br/><br/></span>
+                 "<a target="_blank" href="https://medium.com/@pdtejas">medium.com</a>"
+                 ]<br/><br/>
+               </span>
               &gt; tejas.email<br/>
               <span class="answer">&nbsp;&nbsp;=&gt; "<a target="_blank" href="mailto:tejaspd@berkeley.edu">tejaspd@berkeley.edu</a>"<br/><br/></span>
             </div>
           </div>
 </div>
 
-<div class="experienceSection">
+<div class="experienceSection" id="workexperience">
   <h1>experience</h1>
   <div class="uk-child-width-1-1@s" uk-grid>
     <div>
@@ -110,45 +119,104 @@
             <div class="uk-width-auto@m">
                 <ul class="uk-tab-left" uk-tab="connect: #component-tab-left; animation: uk-animation-fade">
                     <li><a href="#">Work</a></li>
-                    <li><a href="#">Asana</a></li>
-                    <li><a href="#">Spotify</a></li>
-                    <li><a href="#">Sighten</a></li>
-                    <li><a href="#">SaberJack.com</a></li>
-                    <li><a href="#">Google</a></li>
-                    <li><a href="#">Square</a></li>
-                    <li><a href="#">Microsoft</a></li>
-                    <li><a href="#">Invent-A-Bot</a></li>
-                    <li><a href="#">Intel</a></li>
+                    <li><a href="#">Engineering @ Twitch</a></li>
+                    <li><a href="#">Brand Partnerships @ VSCO</a></li>
+                    <li><a href="#">Management & Data Science @ Tesla</a></li>
+                    <li><a href="#">Project Manager @ Asana</a></li>
+                    <li><a href="#">Data Engineering @ Spotify</a></li>
+                    <li><a href="#">Data Analytics @ Google</a></li>
+                    <li><a href="#">Marketing & Product @ Microsoft</a></li>
+                    <li><a href="#">Management Consultant @ Square</a></li>
+                    <li><a href="#">Engineering @ Sighten</a></li>
+                    <li><a href="#">Founder @ Invent-A-Bot</a></li>
                 </ul>
             </div>
             <div class="uk-width-expand@m">
                 <ul id="component-tab-left" class="uk-switcher">
                     <li>
                       <div class="title">
-                      <h2>i've worked in a variety of fields, such as education, solar, and software</h2>
+                      <h2>i've worked & consulted for fortune 500 companies, primarily in data, engineering, and management solutions</h2>
                     </div>
                   </li>
+                  <!-- # twitch -->
                   <li>
                       <div class="uk-grid">
-                        <div class="uk-width-auto"><img src="images/asana.png" width="200" height="133"></div>
+                        <div class="uk-width-auto"> <img src="images/twitch.png" width="200" height="133" > </div>
+                        <div class="uk-width-auto title"> <h2>Engineering Intern</h2></div>
+                        <div class="uk-width-auto subtitle"><h2>may 2019 - august 2019 </h2></div>
+                      </div>
+                    </li>
+                    <!-- # vsco -->
+                    <li>
+                        <div class="uk-grid">
+                          <div class="uk-width-auto"><img src="images/vsco.png" width="200" height="133" ></div>
+                          <div class="uk-width-auto title"> <h2>Brand Partnerships/Marketing Campaigns Manager</h2></div>
+                          <div class="uk-width-auto subtitle"><h2>january 2019 - may 2019 </h2></div>
+                        </div>
+                      </li>
+                      <!-- # tesla -->
+                      <li>
+                          <div class="uk-grid">
+                            <div class="uk-width-auto"><img src="images/tesla.png" width="200" height="133" ></div>
+                            <div class="uk-width-auto title"> <h2>Product Manager/Data Scientist Intern</h2></div>
+                            <div class="uk-width-auto subtitle"><h2>january 2019 - may 2019 </h2></div>
+                          </div>
+                        </li>
+                    <!-- asana -->
+                  <li>
+                      <div class="uk-grid">
+                        <div class="uk-width-auto"><img src="images/asana.png" width="200" height="133" ></div>
                         <div class="uk-width-auto title"> <h2>Project Manager</h2></div>
-                        <div class="uk-width-auto subtitle"><h2>august 2018 - present </h2></div>
+                        <div class="uk-width-auto subtitle"><h2>august 2018 - january 2019 </h2></div>
                       </div>
                     </li>
-                  <li>
-                      <div class="uk-grid">
-                        <div class="uk-width-auto"><img src="images/spotify.png" width="200" height="133"></div>
-                        <div class="uk-width-auto title"> <h2>data engineering intern</h2></div>
-                        <div class="uk-width-auto subtitle"><h2>june 2018 - august 2018</h2></div>
-                      </div>
-                    </li>
+
+                    <!-- # spotify -->
+                    <li>
+                        <div class="uk-grid">
+                          <div class="uk-width-auto"><img src="images/spotify.png" width="200" height="133"></div>
+                          <div class="uk-width-auto title"> <h2>data engineering intern</h2></div>
+                          <div class="uk-width-auto subtitle"><h2>june 2018 - august 2018</h2></div>
+                        </div>
+                      </li>
+                      <!-- google -->
+                      <li>
+                        <div class="uk-grid">
+                          <div class="uk-width-auto"><img src="images/google.png" width="300" height="145"></div>
+                          <div class="uk-width-auto title"> <h2>data analytics consultant</h2></div>
+                          <div class="uk-width-auto subtitle"><h2>january 2018 - may 2018</h2></div>
+                          <div class="uk-width-auto subtitle"><h5>
+                            • Researching and maintaining processes for data collection and maintenance for Google Education Project <br/>
+                            • Engineered web-crawler and web-scraper to create, and self-maintain database for 2000 colleges in the USA <br />
+                            • Studied data collection processes and optimized KPIs and research metrics and engineered an optimal data collection and analytics method for Google Education
+                        </h5></div>
+                        </div>
+                      </li>
+                      <!-- micro -->
+                      <li>
+                        <div class="uk-grid">
+                          <div class="uk-width-auto"><img src="images/microsoft.png" width="200" height="133"></div>
+                          <div class="uk-width-auto title"> <h2>strategy consultant</h2></div>
+                          <div class="uk-width-auto subtitle"><h2> january 2017 - may 2017</h2></div>
+
+                        </div>
+                      </li>
+                      <!-- square -->
+                      <li>
+                        <div class="uk-grid">
+                          <div class="uk-width-auto"><img src="images/square.png" width="200" height="133"></div>
+                          <div class="uk-width-auto title"> <h2>strategy consultant</h2></div>
+                          <div class="uk-width-auto subtitle"><h2>september 2017 - present</h2></div>
+
+                        </div>
+                      </li>
                     <li>
                       <div class="uk-grid">
                         <div class="uk-width-auto"><img src="images/sightenLogo.png" width="200" height="100"></div>
                         <div class="uk-width-auto title"> <h2>software engineering intern</h2></div>
                         <div class="uk-width-auto subtitle"><h2>june 2017 - august 2017</h2></div>
-                        <div class="uk-width-auto subtitle"><h5> 
-                          
+                        <div class="uk-width-auto subtitle"><h5>
+
                           • Full-stack web development utilizing Python, JavaScript, DjangoDB backend, JSON, Angular, CSS and HTML5 <br>
                           • Redesigned and incorporated 8 new features into the reporting application of the Sighten Management platform <br>
                           • Revamped solar panel installation by 30% (14,639 to date) by creating installation management platform in Angular helping 60+ installers generate financial reports for their leads, increasing efficiency and speed of lead conversion <br>
@@ -157,50 +225,12 @@
                       </div>
                     </li>
 
-                    <li>
-                      <div class="uk-grid">
-                        <div class="uk-width-auto"><img src="images/sjlogo.png" width="300" height="145"></div>
-                        <div class="uk-width-auto title"> <h2>ceo/lead developer</h2></div>
-                        <div class="uk-width-auto subtitle"><h2>june 2017 - present</h2></div>
-                        <div class="uk-width-auto subtitle"><h5> 
-                          • Founded front-end design & marketing agency that works with smaller businesses/non-profits in the Bay Area <br/>
-                          • Engineered websites, blogs, & marketing strategies for 12 organizations, leading to an average increase in profit by 80% <br>
-                          • Utilized SEO, growth marketing, and MERN (MongoDB, Express.js, React, Node) to reformat businesses & websites
-                      </h5></div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="uk-grid">
-                        <div class="uk-width-auto"><img src="images/google.png" width="300" height="145"></div>
-                        <div class="uk-width-auto title"> <h2>data analytics consultant</h2></div>
-                        <div class="uk-width-auto subtitle"><h2>january 2018 - may 2018</h2></div>
-                        <div class="uk-width-auto subtitle"><h5> 
-                          • Researching and maintaining processes for data collection and maintenance for Google Education Project <br/> 
-                          • Engineered web-crawler and web-scraper to create, and self-maintain database for 2000 colleges in the USA <br /> 
-                          • Studied data collection processes and optimized KPIs and research metrics and engineered an optimal data collection and analytics method for Google Education
-                      </h5></div>
-                      </div>
-                    </li>
-
-                    <li>
-                      <div class="uk-grid">
-                        <div class="uk-width-auto"><img src="images/square-logo.png" width="200" height="133"></div>
-                        <div class="uk-width-auto title"> <h2>strategy consultant</h2></div>
-                        <div class="uk-width-auto subtitle"><h2>september 2017 - present</h2></div>
-
-                      </div>
-                    </li>
 
 
 
-                    <li>
-                      <div class="uk-grid">
-                        <div class="uk-width-auto"><img src="images/microsoft.png" width="200" height="133"></div>
-                        <div class="uk-width-auto title"> <h2>strategy consultant</h2></div>
-                        <div class="uk-width-auto subtitle"><h2> january 2017 - may 2017</h2></div>
 
-                      </div>
-                    </li>
+
+
 
                     <li>
                       <div class="uk-grid">
